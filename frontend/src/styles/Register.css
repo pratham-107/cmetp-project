@@ -1,0 +1,23 @@
+/* Background gradient for student feel */
+.register-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f2fff5, #ffffff);
+}
+
+/* Card style */
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+.register-card input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}

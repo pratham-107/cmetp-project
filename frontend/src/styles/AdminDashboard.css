@@ -1,0 +1,38 @@
+.admin-dashboard h2 {
+  position: relative;
+  padding-right: 120px; /* space for logout button */
+  font-weight: 700;
+}
+
+.admin-dashboard .btn-secondary.float-end {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.admin-event-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.admin-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+  border-color: #198754;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}

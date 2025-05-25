@@ -1,0 +1,140 @@
+🗓️ Day-Wise Breakdown
+🟩 Day 1 – Setup & Authentication
+Project Setup:
+
+Create folder structure: /client for React, /server for backend.
+
+Initialize with Vite, Bootstrap, and AOS on frontend.
+
+Set up Express + MongoDB connection in backend.
+
+Authentication System:
+
+User signup/login (JWT-based)
+
+Password encryption using bcrypt
+
+Role-based access (e.g., user vs. admin)
+
+✅ Deliverables:
+
+Working login/signup with protected routes (frontend & backend)
+
+JWT stored in localStorage
+
+🟦 Day 2 – Event Model & Basic CRUD (Backend)
+Mongoose Models:
+
+User model
+
+Event model: title, description, date, location, category, image, creator, isApproved
+
+Routes (Backend):
+
+Create event (pending approval)
+
+Get all events (filter by isApproved)
+
+Approve/delete events (admin)
+
+RSVP route (add user to event’s attendees list)
+
+✅ Deliverables:
+
+Fully working Express routes & tested with Postman
+
+MongoDB schema relationships in place
+
+🟨 Day 3 – Event Feed (Frontend)
+Event Listing Page:
+
+Display approved events
+
+Sort/filter (by category/date)
+
+Search bar
+
+Pagination (optional)
+
+Single Event View Page:
+
+Details, RSVP button
+
+Attendees count
+
+✅ Deliverables:
+
+UI for viewing and interacting with events
+
+Axios calls to backend integrated
+
+🟧 Day 4 – Event Creation & Admin Dashboard
+Event Creation Form (with image upload via Cloudinary)
+
+Admin Panel:
+
+View pending events
+
+Approve/delete events
+
+✅ Deliverables:
+
+Form to submit new events (linked to user)
+
+Admin dashboard for approvals
+
+🟥 Day 5 – RSVP, Calendar View, Polishing
+RSVP System:
+
+Add/remove RSVP
+
+Show RSVP count per event
+
+Optional:
+
+Email confirmation using nodemailer
+
+Calendar View using react-calendar or FullCalendar
+
+Frontend Polish:
+
+AOS animations
+
+Consistent styling
+
+Mobile responsiveness
+
+✅ Deliverables:
+
+RSVP system fully functional
+
+Responsive design with AOS animations
+
+🟪 Day 6 – Testing, Deployment & README
+Testing:
+
+Final bug fixes
+
+Edge cases (no events, duplicates, invalid users)
+
+Deployment:
+
+Frontend: Vercel / Netlify
+
+Backend: Render / Railway
+
+MongoDB: Atlas
+
+README:
+
+Project description, tech stack
+
+Features, screenshots, live demo, how to run locally
+
+✅ Deliverables:
+
+Fully deployed frontend & backend
+
+Clean GitHub repo with commit history
+
+Professional README file

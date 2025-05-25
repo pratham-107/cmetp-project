@@ -1,0 +1,25 @@
+/* Full screen background with a light gradient */
+.login-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f0fe, #ffffff);
+}
+
+/* Card styling for the login box */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slight hover animation */
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Input fields focus effect */
+.login-card input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

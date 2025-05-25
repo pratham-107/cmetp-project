@@ -1,0 +1,30 @@
+/* Background style for dashboard */
+.dashboard {
+  min-height: 100vh;
+  background: #f8fbff;
+}
+
+/* Welcome box style */
+.welcome-box {
+  background: #ffffff;
+  border-left: 6px solid #0d6efd;
+}
+
+/* Calendar box custom look */
+.calendar-box {
+  background: #ffffff !important;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+}
+
+/* Responsive padding for calendar */
+.calendar-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Make EventCard transition smooth */
+.card:hover {
+  transform: translateY(-4px);
+  transition: all 0.2s ease-in-out;
+}
