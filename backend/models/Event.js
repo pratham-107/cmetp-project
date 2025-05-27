@@ -25,10 +25,12 @@ const eventSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    rsvpUsers: [{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
-    }]
+    rsvpUsers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
   { timestamps: true }
 );

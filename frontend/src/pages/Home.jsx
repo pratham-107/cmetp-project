@@ -16,7 +16,11 @@ export default function Home() {
           Discover, join, and manage student events on your campus.
         </p>
 
-        <div className="mt-4 button-group" data-aos="fade-up" data-aos-delay="400">
+        <div
+          className="mt-4 button-group"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <Link to="/register" className="btn btn-primary mx-2 mb-2">
             Register as User
           </Link>

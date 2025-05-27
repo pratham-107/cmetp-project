@@ -11,5 +11,3 @@ export default function PrivateRoute({ children }) {
   // If logged in, show the protected page
   return children;
 }
-
-

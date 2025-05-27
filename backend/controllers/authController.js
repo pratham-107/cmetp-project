@@ -24,21 +24,16 @@ exports.register = async (req, res) => {
 
 exports.login = async (req, res) => {
   const { email, password } = req.body;
-  // console.log("➡️ Login attempt:", email);
   try {
     const user = await User.findOne({ email });
 
     if (!user) {
-      // console.log("❌ User not found");
       return res.status(400).json({ msg: "Invalid credentials" });
     }
-    // console.log("🔍 Found user:", user.email);
 
     const match = await bcrypt.compare(password, user.password);
-    // console.log("✅ Password match result:", match);
 
     if (!match) {
-      // console.log("❌ Incorrect password");
       return res.status(400).json({ msg: "Invalid credentials" });
     }
 
@@ -49,14 +44,12 @@ exports.login = async (req, res) => {
         expiresIn: "2d",
       }
     );
-    // console.log("✅ Login successful:", user.email);
 
     res.json({
       token,
       user: { id: user._id, name: user.name, role: user.role },
     });
   } catch (err) {
-    // console.error("💥 Login error:", err.message);
     res.status(500).json({ msg: "Server error" });
   }
 };

@@ -18,14 +18,12 @@ router.post("/", verifyToken, async (req, res) => {
       date,
       location,
       createdBy: req.user.id,
-    })
-    
-    if(existingEvent){
-      return res
-      .status(400)
-      .json({
-        msg: "You have already created an event with the same title, date, and location."
-      })
+    });
+
+    if (existingEvent) {
+      return res.status(400).json({
+        msg: "You have already created an event with the same title, date, and location.",
+      });
     }
 
     const newEvent = new Event({

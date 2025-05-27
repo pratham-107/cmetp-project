@@ -3,11 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
-// const bcrypt = require("bcryptjs");
-// bcrypt.hash("admin123", 10).then(console.log);
-
-
-const eventRoutes = require ("./routes/eventRoutes");
+const eventRoutes = require("./routes/eventRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
@@ -20,8 +16,7 @@ app.use("/api/events", eventRoutes);
 app.use("/api/admin", adminRoutes);
 
 mongoose
-  .connect(process.env.MONGO_URI, {
-  })
+  .connect(process.env.MONGO_URI, {})
   .then(() => {
     app.listen(5000, () => console.log("Server running on port 5000"));
   })
