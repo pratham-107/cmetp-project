@@ -18,6 +18,6 @@ app.use("/api/admin", adminRoutes);
 mongoose
   .connect(process.env.MONGO_URI, {})
   .then(() => {
-    app.listen(5000, () => console.log("Server running on port 5000"));
+    app.listen(5000, () => console.log("Server running on port ${PORT}"));
   })
   .catch((err) => console.log(err));
