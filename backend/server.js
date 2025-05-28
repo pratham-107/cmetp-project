@@ -15,15 +15,9 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/events", eventRoutes);
 app.use("/api/admin", adminRoutes);
 
-// Use Render's provided port or default to 5000
-const PORT = process.env.PORT || 5000;
-
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URI, {})
   .then(() => {
-    app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+    app.listen(5000, () => console.log("Server running on port 5000"));
   })
-  .catch((err) => console.log("❌ MongoDB connection error:", err));
+  .catch((err) => console.log(err));
